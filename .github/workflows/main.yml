@@ -25,7 +25,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Terraform Format
-      uses: hashicorp/terraform-github-action@master
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
         tf_actions_subcommand: 'fmt'
@@ -33,7 +33,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Terraform Init
-      uses: hashicorp/terraform-github-action@master
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
         tf_actions_subcommand: 'init'
@@ -41,7 +41,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Terraform Validate
-      uses: hashicorp/terraform-github-action@master
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
         tf_actions_subcommand: 'validate'
@@ -49,7 +49,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Terraform Plan
-      uses: hashicorp/terraform-github-action@master
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
         tf_actions_subcommand: 'plan'
